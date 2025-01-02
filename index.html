@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Gerador de QR Code</title>
+    <!-- ===== META ===== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Author" content="Alan Ryan da Silva Domingues">
+    <meta content='#333333' name='theme-color' />
+    <meta name="robots" content="index, follow">
+    <!-- ==== OPEN GRAPH ==== -->
+    <meta property="og:title" content="Gerador de QR Code">
+    <meta property="og:image" content="./assets/img/pagina-principal.png">
+    <meta property="og:type" content="website">
+    <!-- ===== SECURITY ===== -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- ==== FAVICON and ICONS ==== -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png" />
+    <!-- ==== MICROSOFT TILE ==== -->
+    <meta name="application-name" content="Gerador de QR Code" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assets/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/icons/mstile-310x310.png" />
+    <!-- ==== CSS and SCRIPT ==== -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/font.css">
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
+    <script src="./scripts/script.js" defer></script>
+    <!-- ================ -->
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <main>
+            <div class="glass-wrapper">
+                <div class="card">
+                    <h3 class="card-title">
+                        Gerador de
+                        <span class="qr-code-title">
+                            QR Code
+                            <i id="icon-qr" class="fa-solid fa-qrcode"></i>
+                        </span>
+                    </h3>
+                    <div class="qr-code-box">
+                        <img src="" alt="QR Code" class="qr-code-image">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="user-input" placeholder="Digite um texto ou URL">
+                        <span class="input-highlight"></span>
+                    </div>
+                    <div class="settings">
+                        <div class="color-picker-container">
+                            <label for="color-picker" class="color-picker-label">Cor:</label>
+                            <input type="color" id="color-picker" value="#000000" class="color-picker">
+                        </div>
+                        <div class="color-picker-container">
+                            <label for="bgcolor-picker" class="color-picker-label">Fundo:</label>
+                            <input type="color" id="bgcolor-picker" value="#FFFFFF" class="color-picker">
+                        </div>
+                        <div class="margin-input-container">
+                            <label for="margin-slider" class="margin-slider-label">Margem: <span
+                                    id="margin-value">1</span>px</label>
+                            <input type="range" id="margin-slider" min="0" max="50" value="1" class="margin-slider">
+                        </div>
+                    </div>
+                    <button class="generate-btn">Gerar QR Code</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            ©2025 Alan Ryan
+        </footer>
+    </div>
+</body>
+
+</html>
